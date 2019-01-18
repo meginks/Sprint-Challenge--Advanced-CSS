@@ -34,13 +34,28 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website adapts to your computer's viewport and uses media queries. A fully responsive website combines fluid percentage-based layouts with adaptive breakpoints. Basically, a fully responsive website is an adaptive website that uses percent-based layouts. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile-first describes a website that has been styled in CSS in the mobile view first -- meaning that the base styles are for mobile and the first thing in the cascade is the mobile view, then likely tablet, then the desktop view. Mobile first sites are organized with media queries that go from lower numbers to higher numbers, and the width is usually set to 100%. 
+
+Desktop-first describes a website that has been styled in CSS in the desktop view first -- meaning that the base styles are for desktop and the first thing in the cascade is the desktop view, then likely tablet, then the mobile view. Desktop first sites are organized with media queries that go from higher numbers to lower numbers, and the width is usually set to a max-width instead of a percent like mobile-first. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
-4. How would you describe preprocessing to someone new to CSS?
+When you add "font-size: 62.5% to the html tag, it makes all of your rem units equal to approximately 10px. 1rem = 10px. This makes it easier to think in rems while coding the site because it is base 10.
+
+4. How would you describe preprocessing to someone new to CSS? 
+
+Pre-processing is a system designed to make it easier to write CSS. There are many CSS preprocessors, like Sass and Less. Basically, you write your styles into a preprocessing file (like .less) instead of into the .css file. When you do this, you use a different, simplified syntax. When you run the preprocessor, it takes everything you wrote into the preprocessing file and translates it into normal css code into whatever css file you are processing it into. Preprocessors allow you to be more organized with your css and faster because you don't have to repeat yourself as often. Imagine you're the boss of your code, so you write down notes about what you want in a certain (much easier) way, give it to your secretary (the preprocessor), who then goes and does the tedious work of actually writing it all out. And it's a machine so you don't have to feel bad that someone else is doing it all for you. It's pretty nice.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I love that you can split your files into multiple pages and import them easily without overloading your page. In normal CSS, I was writing giant comments to make page breaks for myself, but this is so much better.
+
+The concept that I have the most trouble with is probably the escaping and getting media queries to work. 
+
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
