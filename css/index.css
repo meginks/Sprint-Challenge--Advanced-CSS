@@ -372,3 +372,27 @@ footer {
     margin: 0 auto;
   }
 }
+.sign-up {
+  max-width: 800px;
+}
+.sign-up h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.sign-up .astro-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-up .astro-img img {
+  height: 300px;
+  text-align: center;
+}
+.sign-up form {
+  width: 100%;
+  font-size: 2rem;
+}
+.sign-up form input {
+  width: 100%;
+}
