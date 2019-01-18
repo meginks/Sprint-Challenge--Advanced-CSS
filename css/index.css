@@ -182,16 +182,6 @@ p {
   padding: 0 1rem;
   margin: 1rem;
 }
-.top-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-.top-nav h1 {
-  font-size: 3.5rem;
-}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -243,6 +233,42 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  color: #eee;
+  background-color: #22283A;
+  border-radius: 12px;
+  font-size: 2rem;
+  padding: 1.5rem;
+  width: 33%;
+  text-align: center;
+}
+.home .walk .walk-text .btn a {
+  text-decoration: none;
+  text-align: center;
+}
+.home .walk .walk-text .btn a:link {
+  color: #eee;
+}
+.home .walk .walk-text .btn a:visited {
+  color: #22283A;
+}
+.home .walk .walk-text .btn a:hover {
+  color: #22283A;
+}
+.home .walk .walk-text .btn:hover {
+  color: #22283A;
+  background-color: #eee;
+  border: 1px solid #22283A;
+}
+.home .walk .walk-text .btn:hover a {
+  color: #22283A;
+}
+.home .walk .walk-text .btn:hover a:link {
+  color: #22283A;
+}
+.home .walk .walk-text .btn:hover a:hover {
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;

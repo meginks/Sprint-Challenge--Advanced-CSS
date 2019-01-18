@@ -1,1 +1,36 @@
 // Mixins Here
+
+.custom-btn (@text-color, @background-color) { 
+color: @text-color;
+background-color: @background-color;
+border-radius: 12px;
+font-size: 2rem;
+padding: 1.5rem;
+a {
+    text-decoration: none;
+    text-align: center;
+    &:link {
+        color: @text-color;
+    }
+    &:visited {
+        color: @background-color;
+    }
+    &:hover {
+        color: @background-color;
+    }
+}
+&:hover {
+    color: @background-color;
+    background-color: @text-color;
+    border: 1px solid @background-color;
+    a {
+        color: @background-color;
+        &:link {
+            color: @background-color;
+        }
+        &:hover {
+            color: @background-color;
+        }
+    }
+}
+}
