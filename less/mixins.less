@@ -1,11 +1,12 @@
 // Mixins Here
 
-.custom-btn (@text-color, @background-color) { 
+// .custom-btn(black, green, 20px, 10px);
+.custom-btn (@text-color, @background-color, @padding) { 
 color: @text-color;
 background-color: @background-color;
 border-radius: 12px;
 font-size: 2rem;
-padding: 1.5rem;
+padding: @padding;
 a {
     text-decoration: none;
     text-align: center;
