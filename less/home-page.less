@@ -79,8 +79,7 @@
         text-align: center;
         @media @phone {
           .custom-btn(#eee, @btn-bg-color, 2rem);
-          width: 100%;
-          margin: 0 auto;
+          .full-screen;
           a {
             width: 100%;
             display: inline-block;
@@ -102,15 +101,14 @@
     }
   @media @phone {
     flex-direction: column-reverse;
-    width: 100%;
+    .full-screen;
     padding: 10px 0;
-    margin: 0 auto;
     .walk-text {
       width: 100%;
       margin: 20px 0;
     }
     .walk-img {
-      width: 100%;
+      .full-screen;
     }
   }
   }
