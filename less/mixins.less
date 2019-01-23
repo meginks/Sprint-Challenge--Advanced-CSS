@@ -1,1 +1,43 @@
 // Mixins Here
+
+// .custom-btn(black, green, 20px, 10px);
+.custom-btn (@text-color, @background-color, @padding) { 
+color: @text-color;
+background-color: @background-color;
+border-radius: 12px;
+font-size: 2rem;
+padding: @padding;
+a {
+    text-decoration: none;
+    text-align: center;
+    &:link {
+        color: @text-color;
+    }
+    &:visited {
+        color: #eee;
+    }
+    &:hover {
+        color: @background-color;
+    }
+}
+&:hover {
+    color: @background-color;
+    background-color: @text-color;
+    border: 1px solid @background-color;
+    a {
+        color: @background-color;
+        &:link {
+            color: @background-color;
+        }
+        &:hover {
+            color: @background-color;
+        }
+    }
+}
+}
+
+
+.full-screen {
+    width: 100%;
+    margin: 0 auto;
+}

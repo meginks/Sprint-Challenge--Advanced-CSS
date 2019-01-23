@@ -1,6 +1,10 @@
 // Home Content
 
 .home {
+  
+  img {
+      width: 100%
+  }
 
   .intro {
 
@@ -24,6 +28,18 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @phone {
+      .blast {
+        width: 100%;
+      }
+      .sky {
+        display: none;
+      }
+      .launch {
+        display: none;
+      }
     }
   }
 
@@ -58,6 +74,18 @@
       }
 
       .btn {
+        .custom-btn(#eee, @btn-bg-color, 1.5rem);
+        width: 33%;
+        text-align: center;
+        @media @phone {
+          .custom-btn(#eee, @btn-bg-color, 2rem);
+          .full-screen;
+          a {
+            width: 100%;
+            display: inline-block;
+          }
+        }
+
       }
     }
 
@@ -71,5 +99,17 @@
         border-radius: 10px;
       }
     }
+  @media @phone {
+    flex-direction: column-reverse;
+    .full-screen;
+    padding: 10px 0;
+    .walk-text {
+      width: 100%;
+      margin: 20px 0;
+    }
+    .walk-img {
+      .full-screen;
+    }
+  }
   }
 }// home
